@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: antiquewhite;
+}
+
+nav a {
+  display: inline-block;
+  margin: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: slategrey;
+  border-bottom: 2px solid slategrey;
+  transition: 0.1s;
+}
+
+nav a:hover,
+nav a:active {
+  color: slateblue;
+  border-bottom: 2px solid slateblue;
+}
+
+nav a.active {
+  background-color: rgb(130, 127, 150);
+  color: darkslategrey;
+}
+
+.home{
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
+.gallery {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  
+}
+
+.artwork-thumbnail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border: 1px solid white;
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 20rem;
+  max-width: 20rem;
+
+}
+
+.thumbnail {
+  border: 1px solid brown;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 10rem;
+}
+
+.thumb-title {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.artwork {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-items: space-between;
+
+  margin-top: 4rem;
+  margin-left: 5rem;
+
+  border: 1px solid brown;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  width: 30rem;
+
+  cursor: pointer;
+}
+
+.gallery-preview {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1000px;
+}
+
+.artwork-preview {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  border: 1px solid antiquewhite;
+  border-radius: 0.5rem;
+  
+
+  max-width: 85%;
+}
+
+.more-art {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid slategrey;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.75rem;
+  font-size: 1rem;
+  width: 60%;
+}
+
+.more-art:hover {
+  background-color: slategrey;
+  color: white;
+}
